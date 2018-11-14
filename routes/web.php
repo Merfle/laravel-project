@@ -12,3 +12,10 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/faq', 'FaqController@show');
+Route::get('/nosotros', 'NosotrosController@show');
+Route::get('/login', 'LoginController@show');
+Route::get('register', 'RegisterController@show');
+Route::get('portfolio', 'PortfolioController@show');
+Route::get('cotizaciones', 'CotizacionesController@show');
+Route::get('contacto', 'ContactoController@show');
