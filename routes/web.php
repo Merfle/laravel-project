@@ -11,11 +11,24 @@
 |
 */
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/', 'HomeController@index');
-Route::get('/faq', 'FaqController@show');
-Route::get('/nosotros', 'NosotrosController@show');
-Route::get('/login', 'LoginController@show');
-Route::get('register', 'RegisterController@show');
-Route::get('portfolio', 'PortfolioController@show');
-Route::get('cotizaciones', 'CotizacionesController@show');
-Route::get('contacto', 'ContactoController@show');
+
+Route::get('/faq', 'FaqController@index');
+
+Route::get('/nosotros', 'NosotrosController@index');
+
+Route::get('/portfolio', 'PortfolioController@index');
+
+Route::get('/cotizaciones', 'CotizacionesController@index');
+
+Route::get('/contacto', 'ContactoController@index');
+
+Route::get('/profile', 'ProfileController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
