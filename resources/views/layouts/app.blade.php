@@ -17,8 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Open+Sans+Condensed:300|Oswald:200|Wire+One" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="../css/app.css" rel="stylesheet">
-    {{-- <link href="../css/styles.css" rel="stylesheet"> --}}
+    {{-- <link href="../css/app.css" rel="stylesheet"> --}}
+    <link href="../css/styles.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -66,7 +66,7 @@
               <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                    <span class="fa fa-bars"></span>
               </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              {{-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="nosotros">nosotros</a>
               </div>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -83,7 +83,7 @@
               </div>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="registrate">registrate</a>
-              </div>
+              </div> --}}
             </li>
           </ul>
         </nav>

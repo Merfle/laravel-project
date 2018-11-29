@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+<link href="../css/app.css" rel="stylesheet">
+
 {{-- @extends('auth.functions')
 
 @php

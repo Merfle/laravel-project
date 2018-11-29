@@ -3,7 +3,7 @@
 @section('title', "FAQ")
 
 @section('content')
-    <main class="main-body">
+    <main class="main">
       <h2>Preguntas Frecuentes</h2>
       <div class="card">
         <div class="card-data">
