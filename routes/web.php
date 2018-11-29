@@ -13,9 +13,7 @@
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/faq', 'FaqController@index');
 
@@ -27,8 +25,4 @@ Route::get('/cotizaciones', 'CotizacionesController@index');
 
 Route::get('/contacto', 'ContactoController@index');
 
-Route::get('/profile', 'ProfileController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', 'ProfileController@index')->name('profile');

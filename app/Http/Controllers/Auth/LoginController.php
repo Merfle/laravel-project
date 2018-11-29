@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/movies';
+    protected $redirectTo = '/profile';
 
     /*
     protected function redirectTo()
