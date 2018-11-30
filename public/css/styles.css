@@ -120,6 +120,15 @@ h2{
 	padding: 5px;
 	border-bottom: 1px solid #000;
 }
+.avatar {
+  background-color: rgba(133,146,158,1);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
 /* ====================== */
 .footer{
 	width: 100%;

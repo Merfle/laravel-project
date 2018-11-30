@@ -1,9 +1,11 @@
+<link rel="stylesheet" href="../css/app.css">
+
 @extends('layouts.app')
 
 @section('title', 'Profile')
 
 @section('content')
-  <main class="main">  
+  <main class="main">
       <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="card">

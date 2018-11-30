@@ -1,7 +1,8 @@
+<link rel="stylesheet" href="../css/app.css">
+
 @extends('layouts.app')
 
-{{-- @extends('auth.functions')
-
+{{--
 @php
 $month=['January','February','March','April','May','June','July','August','September','October','November','December'];
 if (isset($_POST['submit'])) {
@@ -27,6 +28,7 @@ if (isset($_POST['submit'])) {
 @endphp --}}
 
 @section('content')
+<main class="main">
   <div class="container">
      <div class="row justify-content-center">
          <div class="col-md-8">
@@ -161,7 +163,7 @@ if (isset($_POST['submit'])) {
                                 </div> --}}
 
                                 <div class="form-group row">
-                                  <label for="avatar" class="col-md-4 col-form-label text-md-right">{{ __('Add Profile Picture') }}</label>
+                                  <label for="avatar" class="col-md-4 col-form-label text-md-right">{{ __('Profile Picture') }}</label>
                                     <div class="col-sm-2">
                                       <input type="file" name="avatar"/>
                                     </div>
@@ -180,4 +182,5 @@ if (isset($_POST['submit'])) {
           </div>
       </div>
   </div>
+</main>
 @endsection

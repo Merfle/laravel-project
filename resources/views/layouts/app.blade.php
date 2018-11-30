@@ -80,9 +80,6 @@
               </div>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="contacto">contacto</a>
-              </div>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="registrate">registrate</a>
               </div> --}}
             </li>
           </ul>
@@ -101,7 +98,6 @@
       </nav>
       <nav class="contact">
         <ul>
-          <li><a href="/">home</a></li>
           <li><a href="nosotros">nosotros</a></li>
           <li><a href="portfolio">portfolio</a></li>
           <li><a href="cotizaciones">cotizaciones</a></li>
