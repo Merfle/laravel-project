@@ -23,44 +23,8 @@
 <body>
   <div class="container">
     <header class="header">
-        <nav class="nav">
+      <nav class="nav">
           <!-- Left Side Of Navbar -->
-          <ul class="user">
-            <!-- Authentication Links -->
-            @guest
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                </li>
-                <li class="nav-item">
-                    @if (Route::has('register'))
-                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                    @endif
-                </li>
-            @else
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }} <span class="caret"></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="profile">profile</a>
-                    </div>
-                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                         document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </div>
-                </li>
-            @endguest
-          </ul>
-          <!--Title H1 -->
-            <a href="/"><h1>tona interior design</h1></a>
-          <!-- Right Side Of Navbar -->
           <ul class="menu">
             <li class="nav-item dropdown">
               <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -83,7 +47,47 @@
               </div> --}}
             </li>
           </ul>
-        </nav>
+          <!--Title H1 -->
+            <a href="/"><h1>tona interior design</h1></a>
+          <!-- Right Side Of Navbar -->
+          <ul class="user">
+          <!-- Authentication Links -->
+          @guest
+              <li class="nav-item">
+                <div class="log-in">
+                  <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="register">
+                  @if (Route::has('register'))
+                      <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                  @endif
+                </div>
+              </li>
+          @else
+              <li class="nav-item">
+                <div class="username">
+                  <a class="nav-link"  role="button">{{ Auth::user()->name }} <span class="caret"></span></a>
+                </div>
+                <div class="profile">
+                  <a class="nav-link" role="button" href="profile">profile</a>
+                </div>
+                <div class="log-out">
+                  <a class="nav-link" href="{{ route('logout') }}"
+                      onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                      {{ __('Logout') }}
+                  </a>
+
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                  </form>
+                </div>
+              </li>
+          @endguest
+        </ul>
+      </nav>
     </header>
     <main>
       @yield('content')
