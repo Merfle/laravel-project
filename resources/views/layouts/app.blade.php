@@ -10,7 +10,8 @@
     <title>@yield('title', 'Tona Design')</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+    <script src="{{ asset('js/functions.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,26 +27,24 @@
       <nav class="nav">
           <!-- Left Side Of Navbar -->
           <ul class="menu">
-            <li class="nav-item dropdown">
-              <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                   <span class="fa fa-bars"></span>
-              </a>
-              {{-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="nosotros">nosotros</a>
+            <a id="navbarDropdown" onclick="dropDown()" role="button"><span class="fa fa-bars"></span></a>
+            {{-- <li class="nav-item">
+              <div id="dropdown-item" class="dropdown-item">
+                <a href="nosotros">nosotros</a>
               </div>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="portfolio">portfolio</a>
+              <div id="dropdown-item" class="dropdown-item">
+                <a href="portfolio">portfolio</a>
               </div>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="cotizaciones">cotizaciones</a>
+              <div id="dropdown-item" class="dropdown-item">
+                <a href="cotizaciones">cotizaciones</a>
               </div>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="faq">FAQ</a>
+              <div id="dropdown-item" class="dropdown-item">
+                <a href="faq">FAQ</a>
               </div>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="contacto">contacto</a>
-              </div> --}}
-            </li>
+              <div id="dropdown-item" class="dropdown-item">
+                <a href="contacto">contacto</a>
+              </div>
+            </li> --}}
           </ul>
           <!--Title H1 -->
             <a href="/"><h1>tona interior design</h1></a>
