@@ -71,15 +71,6 @@ body{
  flex-wrap: wrap;
  justify-content: space-between;
 }
-.user{
-	padding: 5px;
-}
-h1{
-	font-family: 'Wire One', sans-serif;
-	font-size: 2em;
-	padding: 5px;
-	text-transform: uppercase;
-}
 .menu{
 	padding: 5px;
 }
@@ -93,6 +84,15 @@ h1{
 }
 .fa{
 	font-size: 1.5em;
+}
+h1{
+	font-family: 'Wire One', sans-serif;
+	font-size: 2em;
+	padding: 5px;
+	text-transform: uppercase;
+}
+.user{
+	padding: 5px;
 }
 /* ====================== */
 .main{
