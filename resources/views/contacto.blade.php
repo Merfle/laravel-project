@@ -3,6 +3,7 @@
 @section('title', 'Contacto')
 
 @section('content')
+  <div class="content">
         <div class="card">
           <div class="card-data">
             <h2>Quienes Somos</h2>
@@ -30,4 +31,5 @@
             <img src="../img/library-1.jpeg" alt="foto-boceto" style="width:100%">
           </div>
         </div>
+  </div>
 @endsection

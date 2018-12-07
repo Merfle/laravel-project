@@ -3,6 +3,7 @@
 @section('title', "FAQ")
 
 @section('content')
+  <div class="content">
       <div class="card">
         <div class="card-data">
           <h3>¿Cuales son las formas de pago?</h3>
@@ -77,4 +78,5 @@
           <img src="../img/interior-design-2.jpg" alt="foto-boceto" style="width:100%;">
         </div>
       </div> --}}
+  </div>
 @endsection

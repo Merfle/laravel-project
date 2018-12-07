@@ -3,7 +3,7 @@
 @section('title', 'Profile')
 
 @section('content')
-  <div class="container">
+  <div class="content">
     <div class="card">
       <div class="card-header">Dashboard</div>
         <div class="card-body">
@@ -42,5 +42,5 @@
             </form>
           </div>
         </div>
-      </div>
+  </div>
 @endsection
