@@ -15,28 +15,21 @@
         </div>
     </div>
     <div class="card">
-        <div class="card-header" id="dash" >Dashboard</div>
-          <div class="card-body">
-            @if (session('status'))
-              <div class="alert alert-success" role="alert">
-                {{ session('status') }}
-              </div>
-            @endif
             <form>
               <label for="project">Areas a rediseñar:</label><br>
-                Piso
+              <h3>Piso</h3>
                 <input type="checkbox" name="piso" value="">
-                Pared
+                <h3>Pared</h3>
                 <input type="checkbox" name="pared" value="">
-                Techo
+                <h3>Techo</h3>
                 <input type="checkbox" name="techo" value="">
-                Placard
+                <h3>Placard</h3>
                 <input type="checkbox" name="placard" value="">
-                Ventana
+                <h3>Ventana</h3>
                 <input type="checkbox" name="ventana" value="">
-                Cortina
+                <h3>Cortina</h3>
                 <input type="checkbox" name="cortina" value=""><br>
-                Metros cuadrados
+                <h3>Metros cuadrados</h3>
                 <input type="text" name="metros" value=""><br>
                 <input type="submit" value="Submit">
             </form>
