@@ -3,10 +3,15 @@
 @section('title', 'Nosotros')
 
 @section('content')
+<<<<<<< HEAD
   <div class="content">
 
     <div class="card">
         <div class="card-data">
+=======
+        <div class="card">
+          <div class="card-data">
+>>>>>>> 92feadc5e396c17529a0cc603fcf106257e8766e
             <h2>Quienes Somos</h2>
             <p>Nosotros somos Tona Interiors.SA, un equipo que se compromete en cada proyecto para garantizar la satisfacción del cliente y darle un estilo nuevo a tu hogar.<br>
                 Tona Interiors.SA se inició este año como un start up con la visión de darle una cara nueva al diseño de interiores y maravillarte con lo que somos capaces.<br>
@@ -40,6 +45,9 @@
         <div class="photos">
             <img src="../img/library-1.jpeg" alt="foto-boceto" style="width:100%;">
         </div>
+<<<<<<< HEAD
     </div>
       </div>
+=======
+>>>>>>> 92feadc5e396c17529a0cc603fcf106257e8766e
 @endsection
