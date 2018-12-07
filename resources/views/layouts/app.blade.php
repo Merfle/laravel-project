@@ -3,25 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>@yield('title', 'Tona Design')</title>
-
-    <!-- Scripts -->
-    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
-    <script src="{{ asset('js/functions.js') }}" defer></script>
-
     <!-- Fonts -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Open+Sans+Condensed:300|Oswald:200|Wire+One|Montserrat" rel="stylesheet">
-
     <!-- Styles -->
     {{-- <link href="../css/styles.css" rel="stylesheet"> --}}
     <link href="../css/custom.css" rel="stylesheet">
-    <link href="../css/login.css" rel="stylesheet">
-
 </head>
 <body>
   <div class="container">
@@ -86,3 +76,8 @@
       </ul>
     </div>
   </div>
+  <!-- Scripts -->
+  {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+  <script src="{{ asset('js/functions.js') }}" defer></script>
+</body>
+</html>
