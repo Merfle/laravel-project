@@ -20,7 +20,7 @@
   </div>
   <div class="card-3">
     <div class="card-data-3">
-      <a href="cotizaciones"><h2>cotizaciones</h2></a>
+      <a href="faq"><h2>preguntas frecuentes</h2></a>
     </div>
     <div class="photos-3">
       <img src="../img/interior-design-1.jpg" alt="foto-boceto" width="100%">

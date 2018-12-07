@@ -54,7 +54,6 @@
         @endguest
         <li><a href="nosotros">nosotros</a></li>
         <li><a href="portfolio">portfolio</a></li>
-        <li><a href="cotizaciones">cotizaciones</a></li>
         <li><a href="faq">FAQ</a></li>
         <li><a href="contacto">contacto</a></li>
       </ul>
@@ -67,12 +66,7 @@
         <li><a href="#"><span class="fa fa-instagram"></span></a></li>
       </ul>
       <ul class="contact">
-        <li><a href="nosotros">nosotros</a></li>
-        <li><a href="portfolio">portfolio</a></li>
-        <li><a href="cotizaciones">cotizaciones</a></li>
-        <li><a href="faq">FAQ's</a></li>
         <li><a href="contacto">contacto</a></li>
-        <li><a href="register">registrate</a></li>
       </ul>
     </div>
   </div>

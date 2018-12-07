@@ -1,4 +1,6 @@
-body{
+body, html{
+	margin: 5px;
+	height: 100%;
 	font-family: 'Montserrat',sans-serif;
   font-size: 16px;
 }
@@ -28,13 +30,12 @@ a:hover{
 /* =========================== */
 .header {
   grid-area: header;
-  box-shadow: 0px 10px 15px rgba(188,188,188,0.5);
+	border-bottom: 1px solid rgba(133,146,158,0.5);
 }
 
 h1{
 	font-family: 'Wire One', sans-serif;
 	font-size: 2em;
-  padding: 5px;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -42,14 +43,13 @@ h1{
 h2{
 	font-family: 'Wire One', sans-serif;
 	font-size: 2em;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid rgba(133,146,158,0.5);
 }
 
 /* =========================== */
-.sidebar {
+.sidebar{
   grid-area: sidebar;
-	grid-row-end: auto;
-  line-height: 40px;
+	line-height: 70px;
   border-bottom: 1px solid rgba(133,146,158,0.5);
 	text-transform: capitalize;
 }
@@ -62,8 +62,7 @@ h2{
 	"card-1"
 	"card-2"
 	"card-3";
-	grid-gap: 1rem;
-	border: 1px solid rgba(133,146,158,0.5);
+	grid-gap: 2rem;
 	border-radius: 4px;
 	padding: 10px;
 }
@@ -71,9 +70,11 @@ h2{
 .card-1{
 	grid-area: card-1;
 }
+
 .card-2{
 	grid-area: card-2;
 }
+
 .card-3{
 	grid-area: card-3;
 }
@@ -98,35 +99,32 @@ h2{
 /* =========================== */
 .footer {
   grid-area: footer;
-  padding: 10px;
-  border-top: 1px solid rgba(133,146,158,1);
-}
-
-.social{
-	color: rgba(0,0,0,0.5);
-  display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-areas:
+	"social"
+	"contact";
+  border-top: 1px solid rgba(133,146,158,0.5);
 	justify-content: center;
 }
 
+.social{
+	grid-area: social;
+	color: rgba(0,0,0,0.5);
+}
+
 .social li{
+	float: left;
 	padding: 10px;
 }
 
 .contact{
+	grid-area: contact;
+	text-transform: uppercase;
   color: rgba(0,0,0,0.5);
-  display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.contact li{
-  text-transform: capitalize;
-  padding: 10px;
 }
 
 /* =========================== */
-@media (min-width: 500px) {
+@media (min-width: 600px){
 	.container{
     grid-template-columns: 200px 1fr;
     grid-template-rows: 80px 1fr 150px;
@@ -150,5 +148,4 @@ h2{
       "card-1 card-1"
       "card-2 card-3";
 	}
-
 }

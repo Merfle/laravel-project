@@ -21,8 +21,6 @@ Route::get('/nosotros', 'NosotrosController@index');
 
 Route::get('/portfolio', 'PortfolioController@index');
 
-Route::get('/cotizaciones', 'CotizacionesController@index');
-
 Route::get('/contacto', 'ContactoController@index');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
