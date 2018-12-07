@@ -14,101 +14,75 @@
     <script src="{{ asset('js/functions.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Open+Sans+Condensed:300|Oswald:200|Wire+One" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Open+Sans+Condensed:300|Oswald:200|Wire+One|Montserrat" rel="stylesheet">
 
     <!-- Styles -->
-    {{-- <link href="../css/app.css" rel="stylesheet"> --}}
-    <link href="../css/styles.css" rel="stylesheet">
+    {{-- <link href="../css/styles.css" rel="stylesheet"> --}}
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+
 </head>
 <body>
   <div class="container">
-    <header class="header">
-      <nav class="nav">
-          <!-- Left Side Of Navbar -->
-          <ul class="menu">
-            <a id="navbarDropdown" onclick="dropDown()" role="button"><span class="fa fa-bars"></span></a>
-            {{-- <li class="nav-item">
-              <div id="dropdown-item" class="dropdown-item">
-                <a href="nosotros">nosotros</a>
+    <div class="header">
+      <h1><a href="/">tona interior design</a></h1>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <!-- Authentication Links -->
+        @guest
+            <li>
+              <div class="log-in">
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
               </div>
-              <div id="dropdown-item" class="dropdown-item">
-                <a href="portfolio">portfolio</a>
+            </li>
+            <li>
+              <div class="register">
+                @if (Route::has('register'))
+                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                @endif
               </div>
-              <div id="dropdown-item" class="dropdown-item">
-                <a href="cotizaciones">cotizaciones</a>
+            </li>
+        @else
+            <li>
+              <div class="username">
+                <a class="nav-link" href="profile" role="button">{{ Auth::user()->name }}</a>
               </div>
-              <div id="dropdown-item" class="dropdown-item">
-                <a href="faq">FAQ</a>
-              </div>
-              <div id="dropdown-item" class="dropdown-item">
-                <a href="contacto">contacto</a>
-              </div>
-            </li> --}}
-          </ul>
-          <!--Title H1 -->
-            <a href="/"><h1>tona interior design</h1></a>
-          <!-- Right Side Of Navbar -->
-          <ul class="user">
-          <!-- Authentication Links -->
-          @guest
-              <li class="nav-item">
-                <div class="log-in">
-                  <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="register">
-                  @if (Route::has('register'))
-                      <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                  @endif
-                </div>
-              </li>
-          @else
-              <li class="nav-item">
-                <div class="username">
-                  <a class="nav-link"  role="button">{{ Auth::user()->name }} <span class="caret"></span></a>
-                </div>
-                <div class="profile">
-                  <a class="nav-link" role="button" href="profile">profile</a>
-                </div>
-                <div class="log-out">
-                  <a class="nav-link" href="{{ route('logout') }}"
+              <div class="log-out">
+                <a class="nav-link" href="{{ route('logout') }}"
                       onclick="event.preventDefault();
                                    document.getElementById('logout-form').submit();">
                       {{ __('Logout') }}
-                  </a>
+                </a>
 
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                      @csrf
-                  </form>
-                </div>
-              </li>
-          @endguest
-        </ul>
-      </nav>
-    </header>
-    <main>
-      @yield('content')
-    </main>
-    <footer class="footer">
-      <nav class="social">
-        <ul>
-          <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-          <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
-          <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-        </ul>
-      </nav>
-      <nav class="contact">
-        <ul>
-          <li><a href="nosotros">nosotros</a></li>
-          <li><a href="portfolio">portfolio</a></li>
-          <li><a href="cotizaciones">cotizaciones</a></li>
-          <li><a href="faq">FAQ's</a></li>
-          <li><a href="contacto">contacto</a></li>
-          <li><a href="register">registrate</a></li>
-        </ul>
-      </nav>
-    </footer>
-</body>
-</html>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+              </div>
+            </li>
+        @endguest
+        <li><a href="nosotros">nosotros</a></li>
+        <li><a href="portfolio">portfolio</a></li>
+        <li><a href="cotizaciones">cotizaciones</a></li>
+        <li><a href="faq">FAQ</a></li>
+        <li><a href="contacto">contacto</a></li>
+      </ul>
+    </div>
+    @yield('content')
+    <div class="footer">
+      <ul class="social">
+        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+        <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
+        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+      </ul>
+      <ul class="contact">
+        <li><a href="nosotros">nosotros</a></li>
+        <li><a href="portfolio">portfolio</a></li>
+        <li><a href="cotizaciones">cotizaciones</a></li>
+        <li><a href="faq">FAQ's</a></li>
+        <li><a href="contacto">contacto</a></li>
+        <li><a href="register">registrate</a></li>
+      </ul>
+    </div>
+  </div>
