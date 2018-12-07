@@ -4,7 +4,7 @@
 
 @section('content')
   <div class="content">
-    <div class="card">
+    <div class="card-1">
       <div class="card-header">Dashboard</div>
         <div class="card-body">
           @if (session('status'))
@@ -14,7 +14,7 @@
             @endif
         </div>
     </div>
-    <div class="card">
+    <div class="card-2">
             <form>
               <label for="project">Areas a rediseñar:</label><br>
               <h3>Piso</h3>

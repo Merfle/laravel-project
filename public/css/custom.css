@@ -17,7 +17,7 @@ a:hover{
 }
 .container {
   display: grid;
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
   grid-template-areas:
     "header"
     "sidebar"
@@ -29,11 +29,6 @@ a:hover{
 .header {
   grid-area: header;
   box-shadow: 0px 10px 15px rgba(188,188,188,0.5);
-  /* width: 100%;
-  background: rgba(255,255,255,1);
-  z-index: 100;
-  box-sizing: border-box;
-  position: fixed; */
 }
 
 h1{
@@ -53,29 +48,38 @@ h2{
 /* =========================== */
 .sidebar {
   grid-area: sidebar;
+	grid-row-end: auto;
   line-height: 40px;
-  border: 1px solid rgba(133,146,158,0.5);
-  border-radius: 4px;
-  text-transform: capitalize;
+  border-bottom: 1px solid rgba(133,146,158,0.5);
+	text-transform: capitalize;
 }
 
 /* =========================== */
-.card {
-  grid-area: content;
-  position: relative;
-  border: 1px solid rgba(133,146,158,0.5);
-  border-radius: 4px;
+.content{
+	grid-area: content;
+	display: grid;
+	grid-template-areas:
+	"card-1"
+	"card-2"
+	"card-3";
+	grid-gap: 1rem;
+	border: 1px solid rgba(133,146,158,0.5);
+	border-radius: 4px;
+	padding: 10px;
 }
 
-.card-data{
-	background: rgba(242,242,242,0.7);
-	position: absolute;
-	top: 5%;
-	padding: 5px;
-  width: 90%;
+.card-1{
+	grid-area: card-1;
+}
+.card-2{
+	grid-area: card-2;
+}
+.card-3{
+	grid-area: card-3;
 }
 
 .form-container{
+	grid-area: content;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -84,7 +88,6 @@ h2{
   "form";
   border: 1px solid rgba(133,146,158,0.5);
   border-radius: 4px;
-
   padding: 10px;
 }
 
@@ -96,7 +99,7 @@ h2{
 .footer {
   grid-area: footer;
   padding: 10px;
-  border-top: 1px dotted rgba(133,146,158,1);
+  border-top: 1px solid rgba(133,146,158,1);
 }
 
 .social{
@@ -124,7 +127,7 @@ h2{
 
 /* =========================== */
 @media (min-width: 500px) {
-  .container{
+	.container{
     grid-template-columns: 200px 1fr;
     grid-template-rows: 80px 1fr 150px;
     grid-template-areas:
@@ -132,4 +135,20 @@ h2{
       "sidebar content"
       "footer  footer";
   }
+
+	.sidebar{
+		border-bottom: none;
+		border-right: 1px solid rgba(133,146,158,0.5);
+	}
+}
+
+@media (min-width: 900px){
+	.content{
+		grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "card-1 card-1"
+      "card-2 card-3";
+	}
+
 }
