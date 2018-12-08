@@ -87,46 +87,15 @@ if (isset($_POST['submit'])) {
           <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
         </div>
         <div class="form birthday">
-          <label for="birthday">
-            {{ __('Birthday') }}
-          </label>
-          <select class="form-control" name="birth_day">
-            @php
-             for ($i=1; $i <= 31; $i++) {
-              if (isset($day)&&$day==$i) {
-                echo "<option selected value=$i>$i</option>";
-              }else {
-                echo "<option value=$i>$i</option>";
-              }
-            } @endphp
-          </select>
-          <select class="form-control" name="birth_month">
-            @php
-             for ($i=0; $i < count($month); $i++) {
-              if (isset($month)&&$month==($i+1)) {
-                echo "<option selected value=".($i+1).">$month[$i]</option>";
-              }else {
-                echo "<option value=".($i+1).">$month[$i]</option>";
-                }
-              } @endphp
-          </select>
-          <select class="form-control" name="birth_year">
-            @php
-             for ($i=1930; $i < 2018; $i++) {
-              if (isset($year)&&$year==$i) {
-                echo "<option selected value=$i>$i</option>";
-              }else {
-                echo "<option value=$i>$i</option>";
-              }
-            } @endphp
-          </select>
+          <label for="birthday">Birthday</label>
+          <input type="date" value=""></input>
         </div>
         <div class="form avatar">
           <label for="avatar">{{ __('Profile Picture') }}</label>
           <input type="file" name="avatar"/>
         </div>
         <div class="form submit">
-          <button type="submit" class="btn btn-primary">
+          <button type="submit">
             {{ __('Register') }}
           </button>
         </div>
