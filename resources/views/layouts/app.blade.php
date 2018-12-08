@@ -60,14 +60,10 @@
     </div>
     @yield('content')
     <div class="footer">
-      <ul class="social">
-        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-        <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
-        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-      </ul>
-      <ul class="contact">
-        <li><a href="contacto">contacto</a></li>
-      </ul>
+        <a href="#"><span class="fa fa-facebook"></span></a>
+        <a href="#"><span class="fa fa-pinterest"></span></a>
+        <a href="#"><span class="fa fa-instagram"></span></a>
+        <a href="contacto">contacto</a>
     </div>
   </div>
   <!-- Scripts -->
