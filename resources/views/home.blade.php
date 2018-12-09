@@ -15,7 +15,7 @@
       <a href="portfolio"><h2>portfolio</h2></a>
     </div>
     <div class="photos-2">
-      <img src="../img/interior-design-2.jpg" alt="foto-boceto" width="100%">
+      <img src="../img/F1-25.jpg" alt="foto-boceto" width="100%">
     </div>
   </div>
   <div class="card-3">

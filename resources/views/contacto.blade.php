@@ -22,7 +22,7 @@
             <img src="../img/library-1.jpeg" alt="foto-boceto" style="width:100%">
           </div>
         </div>
-        <div class="card-2">
+        <div class="card-3">
           <div class="card-data-3">
             <h2>Por qué lo hacemos</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
