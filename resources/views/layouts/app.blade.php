@@ -17,7 +17,7 @@
   <div class="container">
     <div class="header">
       <div class="slider-container">
-        <a href="#" class="slider-trigger">
+        <a class="slider-trigger">
           <span class="fa fa-bars"></span>
         </a>
           <div class="slider-parent">
