@@ -128,6 +128,10 @@ h2{
   padding: 10px;
 }
 
+#sub3{
+	display: none;
+}
+
 /* =========================== */
 .footer {
   grid-area: footer;

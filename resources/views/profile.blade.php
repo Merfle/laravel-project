@@ -14,8 +14,16 @@
             @endif
         </div>
       </div>
-      <div class="card-2">
-        <form>
+
+      <script language="JavaScript">
+      function setVisibility(id, visibility) {
+        document.getElementById(id).style.display = visibility;
+}
+      </script>
+
+<input type=button  value='Mostrar Proyecto' onclick="setVisibility('sub3', 'inline');";>
+<input type=button  value='Ocultar Proyecto' onclick="setVisibility('sub3', 'none');";>
+    <form id="sub3">
           <label for="project">Areas a rediseñar:</label><br>
           <h3>Piso</h3>
             <input type="checkbox" name="piso" value="">
