@@ -42,10 +42,8 @@
                 <a class="nav-link" href="profile" role="button">{{ Auth::user()->name }}</a>
               </div>
               <div class="log-out">
-                <a class="nav-link" href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
+                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
                 </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
@@ -55,7 +53,7 @@
                 @endguest
                 <li><a href="nosotros">nosotros</a></li>
                 <li><a href="portfolio">portfolio</a></li>
-                <li><a href="faq">FAQ</a></li>
+                <li><a href="faq">faq</a></li>
                 <li><a href="contacto">contacto</a></li>
                 </ul>
          </div>
@@ -89,8 +87,6 @@
       }
 
   });
-
-
   </script>
 </body>
 </html>

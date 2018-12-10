@@ -7,7 +7,10 @@ body, html{
 }
 
 ul, li{
-  list-style-type: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-transform: capitalize;
 }
 
 a{
@@ -33,9 +36,9 @@ a:hover{
   grid-area: header;
 	display: grid;
 	grid-column: 20px 1fr;
-	grid-gap: 1rem;
   grid-template-areas:
-	"slider-container title";
+	"title"
+	"slider-container";
 	border-bottom: 1px solid rgba(133,146,158,0.5);
 }
 
@@ -44,6 +47,7 @@ h1{
 	font-family: 'Wire One', sans-serif;
 	font-size: 2em;
 	text-transform: uppercase;
+	text-align: center;
 
 }
 
@@ -62,18 +66,18 @@ h2{
 	grid-area: slider-container;
   position: relative;
 	line-height: 60px;
+	text-align: center;
 }
 
 .slider-container .slider-parent {
   width: 100%;
   background: #fff;
   position: absolute;
-  left: -250px;
+  bottom: -350px;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transition: .2s all linear;
-	text-align: center;
 }
 
 .slider-container .slider-parent.active {
@@ -84,6 +88,9 @@ h2{
   left: 0;
 }
 
+.slider-trigger{
+	font-size: 1.5em;
+}
 /* =========================== */
 .content{
 	grid-area: content;
