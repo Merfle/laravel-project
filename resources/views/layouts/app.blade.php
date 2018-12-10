@@ -16,47 +16,53 @@
 <body>
   <div class="container">
     <div class="header">
-      <h1><a href="/">tona interior design</a></h1>
-    </div>
-    <div class="sidebar">
-      <ul>
-        <!-- Authentication Links -->
-        @guest
-            <li>
-              <div class="log-in">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-              </div>
-            </li>
-            <li>
-              <div class="register">
-                @if (Route::has('register'))
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                @endif
-              </div>
-            </li>
-        @else
-            <li>
+      <div class="slider-container">
+        <a href="#" class="slider-trigger">
+          <span class="fa fa-bars"></span>
+        </a>
+          <div class="slider-parent">
+            <ul>
+              <!-- Authentication Links -->
+              @guest
+                  <li>
+                    <div class="log-in">
+                      <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="register">
+                      @if (Route::has('register'))
+                          <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                      @endif
+                    </div>
+                  </li>
+              @else
+                  <li>
               <div class="username">
                 <a class="nav-link" href="profile" role="button">{{ Auth::user()->name }}</a>
               </div>
               <div class="log-out">
                 <a class="nav-link" href="{{ route('logout') }}"
-                      onclick="event.preventDefault();
-                                   document.getElementById('logout-form').submit();">
-                      {{ __('Logout') }}
+                                    onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
                 </a>
-
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
+                @csrf
                 </form>
-              </div>
-            </li>
-        @endguest
-        <li><a href="nosotros">nosotros</a></li>
-        <li><a href="portfolio">portfolio</a></li>
-        <li><a href="faq">FAQ</a></li>
-        <li><a href="contacto">contacto</a></li>
-      </ul>
+                </div>
+                </li>
+                @endguest
+                <li><a href="nosotros">nosotros</a></li>
+                <li><a href="portfolio">portfolio</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="contacto">contacto</a></li>
+                </ul>
+         </div>
+      </div>
+
+      <h1 class="title"><a href="/">tona interior design</a></h1>
+
     </div>
     @yield('content')
     <div class="footer">
@@ -69,5 +75,22 @@
   <!-- Scripts -->
   {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
   <script src="{{ asset('js/functions.js') }}" defer></script>
+
+  <script type="text/javascript">
+  var sliderTrigger = document.getElementsByClassName("slider-trigger")[0];
+  var slider = document.getElementsByClassName('slider-parent')[0];
+
+  sliderTrigger.addEventListener( "click" , function(el){
+
+      if(slider.classList.contains("active")){
+          slider.classList.remove("active");
+      }else{
+          slider.classList.add("active");
+      }
+
+  });
+
+
+  </script>
 </body>
 </html>
