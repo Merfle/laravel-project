@@ -25,7 +25,7 @@
         <p>La duracion del proyecto varia segun lo solicitado por el cliente pero es informado una vez cuando se le hace el presupuesto.</p>
       </div>
       <div class="photos-2">
-        <img src="../img/library-1.jpeg" alt="foto-boceto" style="width:100%;">
+        <img src="../img/f1-9.jpg" alt="foto-boceto" style="width:100%;">
       </div>
     </div>
     <div class="card-3">
@@ -34,7 +34,7 @@
         <p>Hacemos nuestro trabajo porque amamos lo que hacemos y porque estamos enfocados profundamente en nuestro negocio y en renovar casas.</p>
       </div>
       <div class="photos-3">
-        <img src="../img/library-1.jpeg" alt="foto-boceto" style="width:100%;">
+        <img src="../img/f1-1.jpg" alt="foto-boceto" style="width:100%;">
       </div>
     </div>
   </div>

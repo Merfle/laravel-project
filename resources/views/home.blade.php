@@ -6,7 +6,7 @@
       <div class="card-data-1">
 
 
-        
+
 
         <a href="nosotros"><h2>nosotros</h2></a>
       </div>
@@ -29,7 +29,7 @@
       <a href="faq"><h2>preguntas frecuentes</h2></a>
     </div>
     <div class="photos-3">
-      <img src="../img/hogar-1.jpg" alt="foto-boceto" width="100%">
+      <img src="../img/hogar-1.jpg" alt="foto-boceto" width="50%">
     </div>
   </div>
 </div>

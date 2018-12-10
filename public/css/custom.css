@@ -26,7 +26,6 @@ a:hover{
   grid-gap: 1rem;
   grid-template-areas:
     "header"
-    "sidebar"
     "content"
     "footer";
 }
@@ -58,7 +57,6 @@ h2{
 	color: #fff;
 	padding: 20px;
 	background-color: rgba(0,0,0,1);
-	box-shadow: 15px 10px rgba(248, 85, 85,1);
 }
 
 /* =========================== */
@@ -103,19 +101,22 @@ h2{
 	padding: 10px;
 }
 
-.card-1{
+.card-1 h2{
 	grid-area: card-1;
 	padding: 10px;
+	box-shadow: 10px 10px rgba(236, 112, 99, 1);
 }
 
-.card-2{
+.card-2 h2{
 	grid-area: card-2;
 	padding: 10px;
+	box-shadow: 10px 10px rgba(162, 217, 206, 1);
 }
 
-.card-3{
+.card-3 h2{
 	grid-area: card-3;
 	padding: 10px;
+	box-shadow: 10px 10px rgba(247, 220, 111, 1);
 }
 
 .form-container{
@@ -126,7 +127,7 @@ h2{
   grid-gap: 1rem;
   grid-template-areas:
   "form";
-  border: 1px solid rgba(133,146,158,0.5);
+  border: 1px solid rgba(203, 147, 147,1);
   border-radius: 4px;
   padding: 10px;
 }
