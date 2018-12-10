@@ -24,3 +24,4 @@ Route::get('/portfolio', 'PortfolioController@index');
 Route::get('/contacto', 'ContactoController@index');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
+Route::post('/profile', 'RenovacionesController@store');

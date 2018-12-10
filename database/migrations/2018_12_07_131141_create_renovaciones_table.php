@@ -16,7 +16,7 @@ class CreateRenovacionesTable extends Migration
         Schema::create('renovaciones', function (Blueprint $table) {
             $table->increments('id');
             $table->string('piso');
-            $table->string('pared';)
+            $table->string('pared');
             $table->string('techo');
             $table->string('placard');
             $table->string('ventana');
