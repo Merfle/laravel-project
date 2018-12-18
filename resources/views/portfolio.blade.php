@@ -19,7 +19,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
           </div>
           <div class="photos-2">
-            <img src="../img/hogar-1.jpg" alt="foto-boceto" style="width:50%">
+            <img src="../img/event-1.jpg" alt="foto-boceto" style="width:100%">
           </div>
         </div>
         <div class="card-3">

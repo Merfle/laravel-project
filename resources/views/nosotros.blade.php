@@ -25,7 +25,7 @@
         <p>La duracion del proyecto varia segun lo solicitado por el cliente pero es informado una vez cuando se le hace el presupuesto.</p>
       </div>
       <div class="photos-2">
-        <img src="../img/f1-9.jpg" alt="foto-boceto" style="width:100%;">
+        <img src="../img/f1-19.jpg" alt="foto-boceto" style="width:100%;">
       </div>
     </div>
     <div class="card-3">
