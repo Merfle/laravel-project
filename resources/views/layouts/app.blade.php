@@ -64,9 +64,9 @@
     </div>
     @yield('content')
     <div class="footer">
-        <a href="#"><span class="fa fa-facebook"></span></a>
-        <a href="#"><span class="fa fa-pinterest"></span></a>
-        <a href="#"><span class="fa fa-instagram"></span></a>
+        <a href="https://www.facebook.com"><span class="fa fa-facebook"></span></a>
+        <a href="https://www.pinterest.com"><span class="fa fa-pinterest"></span></a>
+        <a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a>
         <a href="contacto">contacto</a>
     </div>
   </div>
